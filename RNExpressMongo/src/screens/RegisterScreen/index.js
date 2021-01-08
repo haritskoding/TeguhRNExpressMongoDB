@@ -8,6 +8,10 @@ const RegisterScreen = ({ navigation }) => {
     const [hp, setHp] = useState('');
     const [alamat, setAlamat] = useState('');
 
+    const [users, setUsers] = useState([]);
+    const [loading, setLoading] = useState("false");
+    const [button, setButton] = useState("Simpan");
+
     const Submit = () => {
         const data = {
             nama,
@@ -28,6 +32,10 @@ const RegisterScreen = ({ navigation }) => {
         }
         console.log('hallo submit')
     }
+
+
+    
+  
 
 
 

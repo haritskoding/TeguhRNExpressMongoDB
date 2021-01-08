@@ -3,7 +3,9 @@ const bodyParser = require('body-parser');
 const userRoute = require('./api/routes/user')
 const mongoose = require("mongoose");
 
-let mongourl = "mongodb://localhost:27017/JC";
+const PORT = process.env.PORT || 6464;
+
+let mongourl = "mongodb+srv://teguh:teguh@cluster0.oa9la.mongodb.net/JC?retryWrites=true&w=majority" || "mongodb://localhost:27017/JC";
 //let mongourl = "mongodb+srv://Teguh:irJqWtzp2iAO6nbx@cluster0.03qpd.mongodb.net/ArisApi?retryWrites=true&w=majority"
 //let mongourl = "mongodb+srv://aris:Aris2121!@cluster0.03qpd.mongodb.net/ArisApi?retryWrites=true&w=majority"
 
@@ -29,9 +31,9 @@ app.use((req, res, next) => {
 
 app.use((req, res, next) => {
     res.status(200).json({
-        message: 'app is running local host 3000'
+        message: `app is running local host ${PORT}`
     })
 });
 
-const port = 6464;
-app.listen(port, () => console.log(`Localhost sudah berjalan di port ${port}`))
+
+app.listen(PORT, () => console.log(`Localhost sudah berjalan di port ${PORT}`))

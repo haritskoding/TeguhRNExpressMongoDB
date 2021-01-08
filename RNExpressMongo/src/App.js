@@ -10,24 +10,6 @@ export default class App extends Component {
       <NavigationContainer>
         <Router />
       </NavigationContainer>
-      // <View>
-      //   <View>
-      //     <Text>Nama</Text>
-      //     <TextInput />
-      //   </View>
-      //   <View>
-      //     <Text>Email</Text>
-      //     <TextInput />
-      //   </View>
-      //   <View>
-      //     <Text>Phone</Text>
-      //     <TextInput />
-      //   </View>
-      //   <View>
-      //     <Text>Adress</Text>
-      //     <TextInput />
-      //   </View>
-      // </View>
     )
   }
 }

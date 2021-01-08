@@ -5,9 +5,12 @@ import {
     TextInput, TouchableOpacity
 } from 'react-native'
 
-const Pencarian = () => {
+const Pencarian = ({ getData }) => {
 
-    const [selectedValue, setSelectedValue] = useState("name")
+
+
+    const [selectedValue, setSelectedValue] = useState("name");
+
     return (
         <View style={styles.container}>
             <View style={{ margin: 12 }}>
@@ -31,7 +34,7 @@ const Pencarian = () => {
             </View>
 
             <View style={{ alignItems: 'flex-end' }}>
-                <TouchableOpacity style={styles.button} onPress={() => { console.log('hallo') }}>
+                <TouchableOpacity style={styles.button} onPress={getData}>
                     <Text style={styles.btnText}>Search</Text>
                 </TouchableOpacity>
             </View>
