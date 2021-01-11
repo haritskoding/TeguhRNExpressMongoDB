@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 6464;
 
-let mongourl = "mongodb+srv://teguh:teguh@cluster0.oa9la.mongodb.net/JC?retryWrites=true&w=majority" || "mongodb://localhost:27017/JC";
+let mongourl = "mongodb+srv://teguh:teguh@cluster0.oa9la.mongodb.net/JuaraKoding?retryWrites=true&w=majority" || "mongodb://localhost:27017/JC";
 //let mongourl = "mongodb+srv://Teguh:irJqWtzp2iAO6nbx@cluster0.03qpd.mongodb.net/ArisApi?retryWrites=true&w=majority"
 //let mongourl = "mongodb+srv://aris:Aris2121!@cluster0.03qpd.mongodb.net/ArisApi?retryWrites=true&w=majority"
 

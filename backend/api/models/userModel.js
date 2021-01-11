@@ -9,6 +9,7 @@ let UserSchema = new Schema({
     },
     email: {
         type: String,
+        unique: true,
         default: 'email@gmail.com',
     },
     hp: {
